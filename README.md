@@ -448,12 +448,12 @@ db.getCollection('restaurants').aggregate([{$match: {$or: [{cuisine: "American"}
 ```
 
 - Operadores de comparação:
-  -  >  - maior - no Mongo => $gt
+  - '>' - maior - no Mongo => $gt
   - < - menor - no Mongo => $lt
   - <> - diferente - no Mongo => $nte
   - = - igual- no Mongo => $eq
   - <= - menor igual - no Mongo => $lte
-  -  >=  - maior igual - no Mongo => $gte
+  - '>='  - maior igual - no Mongo => $gte
 
 
 
