@@ -96,6 +96,7 @@ INSERT INTO clients (name, age) VALUES('Jhonny Azevedo', 41);
 ou 
 
 INSERT INTO clients JSON '{"name": "Patrick}';
+```
 
 
   - Comando para consultar um timestamp:
