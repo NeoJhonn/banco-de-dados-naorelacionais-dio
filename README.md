@@ -12,7 +12,9 @@
 
 ## Tipos de banco NoSQL
 
-- Graph Store: são estruturas matemáticas são compostas entre nós(são os dados) e vértices(label).
+### Graph Store
+ 
+- São estruturas matemáticas são compostas entre nós(são os dados) e vértices(label).
   - Neo4j, usa a linguagem seifer como estruturação dos dados, testar no Docker.
   - Testar usando o Sandbox: https://sandbox.neo4j.com/ , acesse, crie uma conta, crie um projeto "Blank Sandbox". 
   - Comando para criar um nó:
@@ -49,7 +51,9 @@ MATCH (mylena:Cliente {name: "Mylena Moraes"}) SET mylena.hobbies = ['Assistir D
 MATCH (jhonny:Cliente {name: "Jhonny Azevedo"}) SET jhonny:Cliente_Especial;
 ``` 
 
-- Wide-Columm Store: usar se tiver um volume maior de leitura do que de escrita, necessidade de fazer a consulta pela chave primária.
+### Wide-Columm Store 
+
+- Usar se tiver um volume maior de leitura do que de escrita, necessidade de fazer a consulta pela chave primária.
   - Cassandra usa o CQL(Cassandra Query Language).
   - Comando para criação de um banco de dados:
 ```
@@ -96,7 +100,9 @@ ALTER COLUMNFAMILY clients ADD hobby text;
 DELETE FROM clients WHERE name='Jhonny Azevedo';
 ```
 
-- Key-Value Store: constituido por duas partes, uma chave única(key) e um valor(value).
+### Key-Value Store 
+
+- Constituido por duas partes, uma chave única(key) e um valor(value).
   - Redis disponível para teste em: https://try.redis.io
 
   - Comando para inserir um registro:
@@ -159,7 +165,7 @@ PERSIST user2:name
 DEL user2:name
 ```
 
-## Document Store
+### Document Store
  
 - Dados e documentos autocontidos e auto descritivos. Permite redundância e incosistência. Livre de esquemas, podendo utilizar
 JSON, XML e outros, exemplo de DB MongoDB.
