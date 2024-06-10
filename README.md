@@ -327,6 +327,7 @@ db.createCollection("test2")
 
 // forma 2 já inserindo um documento, se a collection não existir ela cria e inseri um documento
 db.test2.insertOne({"age": 10});
+```
 
 - Atualizando um registro:
 
