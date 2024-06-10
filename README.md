@@ -329,6 +329,7 @@ db.createCollection("test2")
 db.test2.insertOne({"age": 10});
 
 - Atualizando um registro:
+
 ```
 db.clients.updateOne(
 	{name:'Jhonny'},  // filtro(match)
@@ -425,6 +426,7 @@ db.getCollection('restaurants').aggregate([{$group:{_id: '$cuisine', total: {$su
 ```
 
 - Fazer uma busca com o aggregate() adicionando um campo fictício(campo teste por exemplo) sem alterar o documento usando o $addFields:
+
 ```
 db.getCollection('restaurants').aggregate([{$addFields: {teste: true}]);
 ```
